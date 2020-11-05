@@ -20,7 +20,7 @@ Dein Feedback kann beeinflussen, welche Programmiersprache zukünftig unterricht
 Wechsle im Projekt Reiter (link oben, `Alt+1`) auf `Packages`:\
 ![](images/ChangeToPackeges.jpg)
 
-Öffne `Lession1_Einfuehrung/_Einfuehrung.md` um zu der ersten Aufgabe zu kommen.
+Öffne `Lession1_Einfuehrung/Anleitung_Einfuehrung.md` um zu der ersten Aufgabe zu kommen.
 
 Jede Lektion besteht aus einer Anleitung und einer oder mehreren Aufgaben.
 In der Anleitung wird dir jeweils erklärt, was du zur Lösung der Aufgaben brauchst.

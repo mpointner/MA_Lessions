@@ -1,4 +1,4 @@
-package Lession3_Variables
+package Lession3_Variablen
 
 import Util.readInt
 
