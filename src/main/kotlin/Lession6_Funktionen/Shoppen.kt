@@ -1,6 +1,6 @@
 package Lession6_Funktionen
 
-import Util.Euro
+import Util.*
 
 // Hier soll deine Funktion hin
 
@@ -12,5 +12,7 @@ fun main() {
 
     val aktionsPreis = 0.0 // Änder 0.0 zu deinem Funktionsaufruf
 
-    println("Das Kleidungsstück kostet an der Kasse ${aktionsPreis.Euro} €")
+    println("Das Kleidungsstück kostet an der Kasse ${aktionsPreis.formatiereDoublealsEuro}")
+
+    (1..10).forEach { println(it) }
 }

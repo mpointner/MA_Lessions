@@ -14,10 +14,10 @@ Kotlin wird als die moderne Version von Java, der zweit-verbreitesten Programmie
 
 Dies ist ein Schulversuch im Rahmen meiner Masterarbeit, 
 ob Kotlin für Schüler*innen leichter zu lernen ist als ältere Programmiersprachen und 
-ob die Compiler-Fehlermeldungen von Kotlin verständlicher sind.
+ob die Fehlermeldungen von Kotlin verständlicher sind.
 Dein Feedback kann beeinflussen, welche Programmiersprache zukünftig unterrichtet wird.
 
-Wechsle im Projekt Reiter (link oben, `Alt+1`) auf `Packages`:\
+Wechsle im Projekt Reiter (link oben, `Alt+1`/`Cmd+1`) auf `Packages`:\
 ![](../../../images/ChangeToPackeges.jpg)
 
 Öffne `Lession1_Einfuehrung/Anleitung_Einfuehrung.md` um zu der ersten Aufgabe zu kommen.

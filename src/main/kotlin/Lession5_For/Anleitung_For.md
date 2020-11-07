@@ -15,21 +15,22 @@ println(100)
 ```
 
 Deswegen schau wir uns jetzt an wie man Code wiederholen kann.
-In der Informatik sagt man zu einem Wiederholung-Block "Schleife".
+In der Informatik sagt man zu einem Wiederholungsblock "Schleife".
 
-## While: Wiederhole solange zutrifft
+## While: Wiederhole, solange Bedingung zutrifft
 
 ```kotlin
 while (solange_dies_zutrifft) {
-    // Wird wiederholt solange Bedingung 
+    // Wird wiederholt, solange Bedingung zutrifft
 }
 ```
 
 Als abstraktes Beispiel:
 ```kotlin
-while (solange_Blinker_gesetzt) {
-    Blinkerlechte_blickt
-    Blinker_Ton_Tick_Tack
+while (Batterie_ist_leer == false && Uhr_ist_eingeschalten == true) {
+    Bewege_Sekundenzeiger_einen_Schritt_weiter
+    Spiele_Tick_Ton_ab
+    Warte_1_Sekunde
 }
 ```
 In diesem Beispiel würde der Inhalt (Blinkerlechte_blickt und Blinker_Ton_Tick_Tack) der While-Wiederholung nur dann und 
@@ -43,7 +44,7 @@ Es gibt jedoch auch die `do while`-Schleife, wo die Bedingung am Ende ist und da
 ```kotlin
 do { // Zumindest ein Durchlauf
     
-} while (solangeDiesZutrift)
+} while (solange_dies_zutrifft)
 ```
 -->
 ## For: Für Abfolgen und Listen
@@ -104,7 +105,7 @@ for (element in list) {
 1 7 4 
 ```
 
-oder mit den Iterationwerten rechnen:
+oder mit den Werten rechnen:
 ```kotlin
 for (i in 1 until 5) { // ohne 10 (gleich wie 1..9)
     val i_squared = i * i
@@ -117,8 +118,16 @@ for (i in 1 until 5) { // ohne 10 (gleich wie 1..9)
 
 # Aufgaben
 
+## Happy New Year Countdown
+Schreibe einen Countdown für nächstes Silvester.
+Der Countdown soll von `10` nach `1` runderzählen und nach jeder Zahl 1 Sekunde (=1000ms) warten.
+Verwendet dazu die `downTo-Abfolge` und den Befehl `Thread.sleep(1000)` um eine Sekunde zu warten.
+Gib am Ende einen Neu-Jahrs-Spruch aus und schieß ein Feuerwerk in den Himmel über Wien.
+Du kannst das machen, indem du den Befehl `feuerwerk()` verwendest.
+
+
 ## 1x1
-Stelle dir vor du hättest in der Volkschule schon programmieren können, 
+Stelle dir vor du hättest in der Volksschule schon programmieren können, 
 wie leicht wäre dann das Aufschreiben der 1x1 Tabelle gewesen.
 Genau das sollst du jetzt machen: Schreibe ein Programm, dass die 1x1-Matrix ausgibt:
 ```
@@ -132,14 +141,7 @@ Genau das sollst du jetzt machen: Schreibe ein Programm, dass die 1x1-Matrix aus
 8 16 24 32 40 48 56 64 72 
 9 18 27 36 45 54 63 72 81 
 ```
-Tipp: Verschachtle zwei Schleifen wie eine russische Babuschka und rechne dir die Multiplikation aus beiden Laufvariablen in einer eigenen Variable aus.
+Tipp: Verschachtle zwei Schleifen wie eine russische Babuschka und rechne dir die Multiplikation aus beiden Variablen in einer eigenen Variable aus.
+Einen Zeilenumbruch am Ende einer Zeile (nach dem Ende der inneren `for-Schleife`) kannst du mittels `println("")` machen.
 
 ![](../../../../images/Babuschka.jpg)
-
-## Happy New Year Countdown
-Schreibe einen Countdown für nächstes Silvester.
-Der Countdown soll von `10` nach `1` runderzählen und nach jeder Zahl 1 Sekunde (=1000ms) warten.
-Verwendet dazu den Befehl `Thread.sleep(1000)`.
-Gib am Ende einen Neu-Jahrs-Spruch aus und schieß ein Feuerwerk in den Himmel über Wien.
-Du kannst das machen, indem du den Befehl `Util.feuerwerk()` verwendest.
-

@@ -17,11 +17,11 @@ fun main() {
 ```
 
 `fun` weil Kotlin Spaß macht ;)
-Stimmt nur zum Teil, Kotlin macht natürlich Spaß, `fun` steht in dem Fall für Funktion.
-Nach dem Namen `main` folgt dann zwei runde Klammern `()` (hier komme später noch was rein) und geschungene Klammern `{}` wo uns Programmiercode reinkommt.
-Genug des theoretischen, jetzt wollen wir mal was ausgeben.
-Die Funktion `print()` gibt etwas in der Console aus.
-Wenn man Text ausgeben will, muss man den Test unter Anführungszeichen setzen, also `print("Dies ist ein Text")`.
+Stimmt nur zum Teil, Kotlin macht natürlich Spaß, `fun` steht in dem Fall aber für Funktion.
+Nach dem Namen `main` folgen dann zwei runde Klammern `()` und geschwungene Klammern `{}` wo uns Programmiercode reinkommt.
+Genug des theoretischen jetzt wollen wir mal was ausgeben.
+Die Funktion `print()` schreibt etwas auf den Bildschirm.
+Wenn man Text ausgeben will, muss man den Text unter Anführungszeichen setzen, also `print("Dies ist ein Text")`.
 
 ```kotlin
 fun main() {
@@ -29,7 +29,7 @@ fun main() {
 }
 ```
 
-Ein Programm kannst du mit dem Pfeil links der Main Funktion ![](../../../../images/RunIcon.png) ausführen (oder `Strg+Umschalt+F10`):
+Ein Programm kannst du mit dem Pfeil links der `main` Funktion ![](../../../../images/RunIcon.png) ausführen (oder `Strg+Umschalt+F10`/`Control+Umschalt+R`):
 
 ![](../../../../images/RunWindow.png)
 
@@ -55,7 +55,7 @@ Hello World
 
 # Aufgabe:
 
-Gib auf dem Bildschirm deinen Hallo + deinen Namen aus, z.B.:
+Gib auf dem Bildschirm `Hallo + deinen Namen` aus, z.B.:
 
 ```
 Hallo Thomas

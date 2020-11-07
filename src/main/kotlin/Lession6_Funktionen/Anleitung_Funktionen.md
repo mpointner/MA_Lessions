@@ -34,7 +34,7 @@ fun main() {
 ```
 Hello World
 ```
-Hier wird die Ausgabe auf die Console in eine Funktion ausgelagert.
+Hier wird die Ausgabe in eine Funktion ausgelagert.
 Die Funktion hat einen Parameter (Input) `name` vom Typ `String`, aber keinen Rückgabewert (Output).
 
 ## Maximum
@@ -50,6 +50,9 @@ fun main() {
     val ergebnis = max(5, 2)
     println(ergebnis)
 }
+```
+```
+5
 ```
 
 Die Funktion `max` vergleicht die übergebenen Parameter `a` und `b` und gibt den größeren der Beiden zurück.
@@ -69,7 +72,7 @@ fun main() {
 }
 ```
 
-Bis jetzt waren das immer nur ganz kurz Funktionen, wo sich das auslagern des Code eigentlich nicht auszahlen würde.
+Bis jetzt waren das immer nur ganz kurze Funktionen, wo sich das Auslagern des Codes eigentlich nicht auszahlen würde.
 Funktionen sind aber nicht auf eine Zeile beschränkt, sondern können auch größer werden.
 Zum Beispiel kennst du vielleicht die Fakultät oder die Fibonacci-Folge.
 Keine Sorge, du musst die folgende zwei Funktionen nicht verstehen, 
@@ -77,7 +80,7 @@ sie sind nur dazu da, dir zu zeigen, dass Funktionen auch größer verwenden kö
 
 ## Fakultät (zur Anschauung)
 
-Die [Fakultät](https://de.wikipedia.org/wiki/Fakult%C3%A4t_(Mathematik)) berechnet das Produkt von `x * (x-1) * ... * 1`
+Die [Fakultät](https://de.wikipedia.org/wiki/Fakult%C3%A4t_(Mathematik)) berechnet das Produkt von `x * (x-1) * ... * 1`, z.B.: `5! = 5 * 4 * 3 * 2 * 1 = 120`.
 ```kotlin
 fun fak(x: Int): Int {
     var erg = 1
@@ -152,9 +155,11 @@ f_10: 89
 ![](../../../../images/Kleidung.jpg)
 
 Bei dem Kleidungsgeschäft deiner Wahl ist ein tolles Kleidungsstück um `x` Prozent vom angegebenen Preis verbilligt.
-Der Rabatt wir aber erst an der Kassa abgezogen, du möchtest aber wissen, ob du genug Bargeld dabei hast, um das Kleidungsstück nach Rabatt zu kaufen.
+Der Rabatt wird aber erst an der Kassa abgezogen, du möchtest aber wissen, ob du genug Bargeld dabei hast, um das Kleidungsstück nach Rabatt zu kaufen.
 Schreibe dir einen kleinen Taschenrechner als Funktion, der dir den Preis an der Kassa ausrechnet.
-Tipp: Beachte dabei, dass bei z.B.: `x = 35` Prozent Rabatt, der Preis an der Kassa `100 - x = 65` Prozent des ursprünglich Preises ist.
+
+**Tipp:**
+Beachte dabei, dass bei z.B.: `x = 35` Prozent Rabatt, der Preis an der Kassa `100 - x = 65` Prozent des ursprünglich Preises ist.
 Am Ende musst du noch `/ 100` dividieren, damit der Preis nicht mehr wird.
 Rechne mit dem Datentyp `Double` um Runden zu vermeiden.
 
@@ -162,10 +167,10 @@ Rechne mit dem Datentyp `Double` um Runden zu vermeiden.
 
 ![](../../../../images/Bier.jpg)
 
-Eine Frage die dir vielleicht schon mal beim Fortgehen gestellt hast:
+Eine Frage die du dir vielleicht schon mal beim Fortgehen gestellt hast:
 
-Du hast 50€ in der Geldbörse zum Fortgehen.
-Die Bar verlangt 8€ Eintritt und Bier kostet 3.50€.
+Du hast 50 € in der Geldbörse zum Fortgehen.
+Die Bar verlangt 8 € Eintritt und Bier kostet 3.50 €.
 Wie viel Bier kannst du dir kaufen?
 
 Schreib eine allgemeine Funktion `bier`, die dir abhängig vom `budget`, `eintritt` und `bierPreis` die `bierAnzahl` ausrechnet.
