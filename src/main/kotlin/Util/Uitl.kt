@@ -3,17 +3,17 @@ package Util
 import java.lang.NumberFormatException
 import kotlin.math.roundToInt
 
-fun readString(text: String? = null): String {
-    if (text != null) println(text)
+fun readString(aufforderung: String? = null): String {
+    if (aufforderung != null) println(aufforderung)
     readLine()?.let {
         return it
     }
     return ""
 }
 
-fun readFloat(text: String? = null): Float {
+fun readFloat(aufforderung: String? = null): Float {
     while (true) {
-        if (text != null) println(text)
+        if (aufforderung != null) println(aufforderung)
         readLine()?.let {
             try {
                 return it.toFloat()
@@ -24,9 +24,9 @@ fun readFloat(text: String? = null): Float {
     }
 }
 
-fun readDouble(text: String? = null): Double {
+fun readDouble(aufforderung: String? = null): Double {
     while (true) {
-        if (text != null) println(text)
+        if (aufforderung != null) println(aufforderung)
         readLine()?.let {
             try {
                 return it.toDouble()
@@ -37,9 +37,9 @@ fun readDouble(text: String? = null): Double {
     }
 }
 
-fun readInt(text: String? = null): Int {
+fun readInt(aufforderung: String? = null): Int {
     while (true) {
-        if (text != null) println(text)
+        if (aufforderung != null) println(aufforderung)
         readLine()?.let {
             try {
                 return it.toInt()
@@ -50,9 +50,9 @@ fun readInt(text: String? = null): Int {
     }
 }
 
-fun readLong(text: String? = null): Long {
+fun readLong(aufforderung: String? = null): Long {
     while (true) {
-        if (text != null) println(text)
+        if (aufforderung != null) println(aufforderung)
         readLine()?.let {
             try {
                 return it.toLong()

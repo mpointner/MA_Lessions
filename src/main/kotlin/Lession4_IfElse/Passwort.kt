@@ -3,6 +3,6 @@ import Util.readString
 
 // Auf das grüne Dreieck drücken zum Ausführen
 fun main() {
-    val passwort = readString()
+    val passwort = readString("Passwort eingeben:")
 
 }
