@@ -174,4 +174,4 @@ Die Bar verlangt 8 € Eintritt und dein Lieblingsgetränk kostet 3.50 €.
 Wie viele Gläser/Flaschen von deinem Lieblingsgetränk kannst du dir kaufen?
 
 Schreib eine allgemeine Funktion `berechneAnzahlLieblingsgetraenk`, die dir abhängig vom `budget`, `eintritt` und `getraenkPreis` die `getraenkAnzahl` ausrechnet.
-Rechne wieder in Double.
+Rechne wieder in `Double`.
