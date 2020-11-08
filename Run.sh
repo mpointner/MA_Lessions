@@ -4,7 +4,7 @@ currentBranch=$($git branch --show-current)
 echo ">$currentBranch<"
 newRandomBranchName=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 newRandomBranchName="Student_${newRandomBranchName}"
-if [ $currentBranch == "main" ]; then
+if [[ $currentBranch == "main" ]]; then
 	echo $($git pull)
 	echo $($git checkout -b $newRandomBranchName)
 	echo $($git push --set-upstream origin $newRandomBranchName)
