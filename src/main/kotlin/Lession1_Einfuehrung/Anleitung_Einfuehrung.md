@@ -62,3 +62,10 @@ Hallo Thomas
 ```
 
 Ändere dazu die Datei `Hello_World.kt` ab.
+
+**Tipp:**
+Leg dir am Besten diese Anleitung und den Code nebeneinander, indem du den `Anleitung_Einfuehrung.md` Tab auf die linke/rechte Hälfte von `Hello_World.kt` ziehst:
+
+![](../../../../images/SplitscreenZiehen.png)
+
+![](../../../../images/Splitscreen.png)
