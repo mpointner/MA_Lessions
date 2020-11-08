@@ -1,5 +1,3 @@
-Klicke rechts oben auf ![](../../../../images/LayoutPreviewOnly.png) um nur die erzeugte Version dieser Anleitung zu sehen.
-
 # Wiederholungen
 
 Oft ist es beim Programmieren notwendig etwas zu wiederholen.

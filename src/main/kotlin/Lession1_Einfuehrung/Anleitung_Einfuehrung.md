@@ -1,5 +1,3 @@
-Klicke rechts oben auf ![](../../../../images/LayoutPreviewOnly.png) um nur die erzeugte Version dieser Anleitung zu sehen.
-
 # Willkommen in unserem Kotlin-Programmierkurs
 
 In unserem Kurs lernen wir heute Kotlin zu programmieren.

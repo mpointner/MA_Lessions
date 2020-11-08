@@ -1,5 +1,3 @@
-Klicke rechts oben auf ![](../../../../images/LayoutPreviewOnly.png) um nur die erzeugte Version dieser Anleitung zu sehen.
-
 # Funktionen
 Funktionen sind ein Programm zu strukturieren und Code wiederverwendbar zu machen.
 Du kennst bereits eine Funktion, die `main` Funktion.
@@ -110,6 +108,7 @@ fun main() {
 10: 3628800
 ```
 
+<!--
 ## Fibonacci-Folge (zur Anschauung)
 
 Bei der [Fibonacci-Folge](https://de.wikipedia.org/wiki/Fibonacci-Folge) ist jedes Folgen-Element die Summe der vorherigen Beiden
@@ -147,6 +146,7 @@ f_8: 34
 f_9: 55
 f_10: 89
 ```
+-->
 
 # Aufgaben
 

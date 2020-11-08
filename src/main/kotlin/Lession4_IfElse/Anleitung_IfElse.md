@@ -1,5 +1,3 @@
-Klicke rechts oben auf ![](../../../../images/LayoutPreviewOnly.png) um nur die erzeugte Version dieser Anleitung zu sehen.
-
 # Verzweigungen
 
 ![](../../../../images/Verzweigung.jpg)
