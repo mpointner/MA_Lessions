@@ -96,7 +96,7 @@ for (i in 9 downTo 1 step 2) { // von 9 nach 1 runter mit 2-Schrittweit:
 
 Für noch komplexere Abfolgen muss man eine Liste erstellen:
 ```kotlin
-val list = listOf(1, 7, 4)
+var list = listOf(1, 7, 4)
 for (element in list) {
     print("$element ")
 }
@@ -108,7 +108,7 @@ for (element in list) {
 oder mit den Werten rechnen:
 ```kotlin
 for (i in 1 until 5) { // ohne 10 (gleich wie 1..9)
-    val i_squared = i * i
+    var i_squared = i * i
     print("$i_squared ")
 }
 ```

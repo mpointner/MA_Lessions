@@ -77,9 +77,9 @@ fun readLong(aufforderung: String? = null): Long {
     }
 }
 
-val Double.formatiereDoublealsEuro: String get() =((this * 100).roundToInt() / 100.0).toString() + "€"
+fun Double.formatiereDoubleAlsEuro(): String = ((this * 100).roundToInt() / 100.0).toString() + "€"
 
-val Double.aufGanzeAbrunden: Int get() = this.toInt()
+fun Double.aufGanzeAbrunden(): Int = this.toInt()
 
 fun feuerwerk() {
     println("""

@@ -47,7 +47,7 @@ fun max(a: Int, b: Int): Int {
 }
 
 fun main() {
-    val ergebnis = max(5, 2)
+    var ergebnis = max(5, 2)
     println(ergebnis)
 }
 ```
@@ -67,7 +67,7 @@ fun sum(a: Int, b: Int, c: Int = 0): Int {
 }
 
 fun main() {
-    val ergebnis = sum(1, 2, 3)
+    var ergebnis = sum(1, 2, 3)
     println(ergebnis)
 }
 ```
@@ -92,7 +92,7 @@ fun fak(x: Int): Int {
 
 fun main() {
     for (x in 1..10) {
-        val ergebnis = fak(x)
+        var ergebnis = fak(x)
         println("$x: $ergebnis")
     }
 }
@@ -129,7 +129,7 @@ fun fibonacci(n: Int): Int {
 
 fun main() {
     for (n in 0..10) {
-        val ergebnis = fibonacci(n)
+        var ergebnis = fibonacci(n)
         println("f_$n: $ergebnis")
     }
 }
@@ -170,8 +170,8 @@ Rechne mit dem Datentyp `Double` um Runden zu vermeiden.
 Eine Frage die du dir vielleicht schon mal beim Fortgehen gestellt hast:
 
 Du hast 50 € in der Geldbörse zum Fortgehen.
-Die Bar verlangt 8 € Eintritt und Bier kostet 3.50 €.
-Wie viel Bier kannst du dir kaufen?
+Die Bar verlangt 8 € Eintritt und dein Lieblingsgetränk kostet 3.50 €.
+Wie viele Gläser/Flaschen von deinem Lieblingsgetränk kannst du dir kaufen?
 
-Schreib eine allgemeine Funktion `bier`, die dir abhängig vom `budget`, `eintritt` und `bierPreis` die `bierAnzahl` ausrechnet.
+Schreib eine allgemeine Funktion `berechneAnzahlLieblingsgetraenk`, die dir abhängig vom `budget`, `eintritt` und `getraenkPreis` die `getraenkAnzahl` ausrechnet.
 Rechne wieder in Double.

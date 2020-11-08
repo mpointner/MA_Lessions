@@ -4,14 +4,14 @@ import Util.*
 import kotlin.random.Random
 
 fun main() {
-    val schere: String = "Schere"
-    val stein: String = "Stein"
-    val papier: String = "Papier"
+    var schere: String = "Schere"
+    var stein: String = "Stein"
+    var papier: String = "Papier"
 
-    val gueltigeEingaben = listOf(schere, stein, papier)
+    var gueltigeEingaben = listOf(schere, stein, papier)
 
-    val computer = gueltigeEingaben[Random.nextInt(0, 3)] // Wählt zufällt Schere, Stein oder Papier aus (den Code musst du nicht verstehen)
-    val ich = readString("Deine Wahl eingeben (Schere, Stein, Papier):", gueltigeEingaben)
+    var computer = gueltigeEingaben[Random.nextInt(0, 3)] // Wählt zufällt Schere, Stein oder Papier aus (den Code musst du nicht verstehen)
+    var ich = readString("Deine Wahl eingeben (Schere, Stein, Papier):", gueltigeEingaben)
 
     println("Du hast $ich gewählt, Computer hat $computer gewählt!")
     // Ab hier fehlt noch dein Code

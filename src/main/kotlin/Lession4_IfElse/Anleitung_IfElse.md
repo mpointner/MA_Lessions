@@ -58,9 +58,9 @@ Es gibt auch den ODER-Operation `||` (doppelter Strich `alt gr+<` / `Option+7`).
 ## Tipps und Tricks
 
 ```kotlin
-val a: Int = 3
-val b: Int = 2
-var max = 123456 // Irgendein Wert, wird eh im if-else geändert
+var a: Int = 3
+var b: Int = 2
+var max = 0
 if (a > b) {
     max = a
 } else {
@@ -70,12 +70,12 @@ println(max)
 ```
 
 Wenn in beiden Pfaden die gleiche Variable (in dem Fall `max`) zugewiesen wird, 
-kann man dies auch und spart sich damit den komische Startwert (und kann `val` statt `var` verwenden):
+kann man dies auch und spart sich damit den komische Startwert (und kann `var` statt `var` verwenden):
 
 ```kotlin
-val a: Int = 3
-val b: Int = 2
-val max = if (a > b) {
+var a: Int = 3
+var b: Int = 2
+var max = if (a > b) {
     a
 } else {
     b
@@ -87,9 +87,9 @@ Wenn in der geschwungenen Klammer nur ein Befehl/Variable steht, kann man die Kl
 Zeilenumbrüche sind auch optional:
 
 ```kotlin
-val a: Int = 3
-val b: Int = 2
-val max = if (a > b) a else b
+var a: Int = 3
+var b: Int = 2
+var max = if (a > b) a else b
 println(max)
 ```
 
@@ -99,7 +99,7 @@ println(max)
 
 ![](../../../../images/Passwort.jpg)
 
-Schreibe ein Programm, dass eine Passworteingabe überprüft. Verwende zum Einlese `val eingabe = readString()`.
+Schreibe ein Programm, dass eine Passworteingabe überprüft. Verwende zum Einlese `var eingabe = readString()`.
 Wenn das Passwort mit `"geheim"` übereinstimmt, dann soll "Eingeloggt" ausgegeben werden, sonst "Falsches Passwort".
 
 ## Schere-Stein-Papier
