@@ -1,6 +1,6 @@
-package Lession6_Funktionen
+package lession6_Funktionen
 
-import Util.*
+import util.*
 
 // Hier kommt deine Funktion hin:
 

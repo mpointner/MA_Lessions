@@ -1,6 +1,6 @@
-package Lession1_Einfuehrung
+package lession2_Rechnen
 
 // Auf das grüne Dreieck drücken zum Ausführen
 fun main() {
-    println("Hello World")
+    println(1)
 }

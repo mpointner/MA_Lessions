@@ -1,6 +1,4 @@
-package Lession5_For
-
-import Util.*
+package lession5_For
 
 // Auf das grüne Dreieck drücken zum Ausführen
 fun main() {

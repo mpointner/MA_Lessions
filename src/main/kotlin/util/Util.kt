@@ -1,4 +1,4 @@
-package Util
+package util
 
 import java.lang.NumberFormatException
 import kotlin.math.roundToInt

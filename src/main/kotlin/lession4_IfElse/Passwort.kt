@@ -1,5 +1,5 @@
-package Lession4_IfElse
-import Util.readString
+package lession4_IfElse
+import util.readString
 
 // Auf das grüne Dreieck drücken zum Ausführen
 fun main() {

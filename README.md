@@ -24,4 +24,4 @@ Jede Lektion besteht aus einer Anleitung und einer oder mehreren Aufgaben.
 
 In der Anleitung wird dir jeweils erklärt, was du zur Lösung der Aufgaben brauchst.
 
-Öffne `Lession1_Einfuehrung/Anleitung_Einfuehrung.md` um zu der ersten Aufgabe zu kommen.
+Öffne `lession1_Einfuehrung/Anleitung_Einfuehrung.md` um zu der ersten Aufgabe zu kommen.

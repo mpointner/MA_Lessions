@@ -1,6 +1,6 @@
-package Lession3_Variablen
+package lession3_Variablen
 
-import Util.readInt
+import util.readInt
 
 // Auf das grüne Dreieck drücken zum Ausführen
 fun main() {

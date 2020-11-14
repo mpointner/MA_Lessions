@@ -1,6 +1,6 @@
-package Lession4_IfElse
+package lession4_IfElse
 
-import Util.*
+import util.*
 import kotlin.random.Random
 
 fun main() {
