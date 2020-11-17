@@ -5,11 +5,13 @@ Die `main` Funktion ist eine ganz besondere Art von Funktion, da sie der Einstie
 Du kannst aber auch selbst Funktionen definierten.
 Die Syntax dafür besteht aus:
 ```kotlin
-fun funktionsName(parameterName: ParameterTyp): RueckgabeTyp {
+fun funktionsName(parameterName1: ParameterTyp, parameterName2: ParameterTyp): RueckgabeTyp {
     ...
     return rueckgabeWert
 }
 ```
+
+Wichtig dabei ist, dass man bei den Parametern einer Funktion, anders als wie bei Variablen, die Typen angeben muss.
 
 Eine Funktion kann auch keine Parameter erhalten `()` oder 
 nichts zurückgeben (dann entfällt `: RueckgabeTyp` und `return rueckgabeWert`).
@@ -21,12 +23,12 @@ beim Rückgabetyp nach dem Funktionsname UND den geschwungenen Klammern `(...)`.
 
 Hier ein Beispiel einer einfachen Funktion ohne Rückgabe samt Aufruf:
 ```kotlin
-fun sayHello(name: String) {
+fun sayHello(name: String) { // <- Funktionsdefination
     println("Hello " + name)
 }
 
 fun main() {
-    sayHello("World")
+    sayHello("World") // <- Funktionsaufruf
 }
 ```
 ```
@@ -40,12 +42,12 @@ Die Funktion hat einen Parameter (Input) `name` vom Typ `String`, aber keinen R�
 Hier ein Beispiel mit zwei Parametern `a` und `b` vom Typ `String` und einem Rückgabewert vom Typ `Int`
 
 ```kotlin
-fun max(a: Int, b: Int): Int {
+fun max(a: Int, b: Int): Int { // <- Funktionsdefinition
     return if (a > b) a else b
 }
 
 fun main() {
-    var ergebnis = max(5, 2)
+    var ergebnis = max(5, 2) // <- Funktionsaufruf
     println(ergebnis)
 }
 ```
@@ -148,24 +150,32 @@ f_10: 89
 ```
 -->
 
-# Aufgaben
-
 ## Shoppen
 
 ![](../../../../images/Kleidung.jpg)
 
-Bei dem Kleidungsgeschäft deiner Wahl ist ein tolles Kleidungsstück um `x` Prozent vom angegebenen Preis verbilligt.
+Hier ein Beispiel wo eine Funktion sinnvoll ist. Bei dem Kleidungsgeschäft deiner Wahl ist ein tolles Kleidungsstück um `x` Prozent vom angegebenen Preis verbilligt.
 Der Rabatt wird aber erst an der Kassa abgezogen, du möchtest aber wissen, ob du genug Bargeld dabei hast, um das Kleidungsstück nach Rabatt zu kaufen.
-Schreibe dir einen kleinen Taschenrechner als Funktion, der dir den Preis an der Kassa ausrechnet.
+Diese Berechnung kann als Funktion geschrieben werden und somit an mehreren Stellen aufgerufen werden.
 
-**Tipp:**
-Beachte dabei, dass bei z.B.: `x = 35` Prozent Rabatt, der Preis an der Kassa `100 - x = 65` Prozent des ursprünglich Preises ist.
-Am Ende musst du noch `/ 100` dividieren, damit der Preis nicht mehr wird.
-Rechne mit dem Datentyp `Double` um Runden zu vermeiden.
+```kotlin
+fun aktionsPreis(preis: Double, rabatt: Double): Double { // <- Funktionsdefinition
+    return preis * (100 - rabatt) / 100
+}
 
-## Fortgehen
+fun main() {
+    var preis: Double = readDouble("Was kostet das Kleidungsstück?")
+    var rabatt: Double = readDouble("Wie viel Prozent Rabatt ist auf das Kleidungsstück?")
 
-![](../../../../images/Bier.jpg)
+    var aktionsPreis = aktionsPreis(preis, rabatt) // <- Funktionsaufruf
+
+    println("Das Kleidungsstück kostet an der Kasse ${aktionsPreis.formatiereDoubleAlsEuro()}")
+}
+```
+
+# Aufgabe: Fortgehen
+
+![](../../../../images/Getraenk.jpg)
 
 Eine Frage die du dir vielleicht schon mal beim Fortgehen gestellt hast:
 
@@ -175,3 +185,9 @@ Wie viele Gläser/Flaschen von deinem Lieblingsgetränk kannst du dir kaufen?
 
 Schreib eine allgemeine Funktion `berechneAnzahlLieblingsgetraenk`, die dir abhängig vom `budget`, `eintritt` und `getraenkPreis` die `getraenkAnzahl` ausrechnet.
 Rechne wieder in `Double`.
+**Tipps:** Manches kannst du dir beim vorherigen Beispiel "Shoppen" abschauen.
+
+
+# Du bist fertig :)
+
+Vielen Dank für deine Teilnahme :)

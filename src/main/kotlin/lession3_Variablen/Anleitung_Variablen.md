@@ -1,6 +1,6 @@
 # Variablen
 
-Um Wert zu speichern, verwenden wir Variablen (Schlüsselwort `var`).
+Um Werte zu speichern, verwenden wir Variablen (Schlüsselwort `var`).
 
 Variablen können von verschieden Typen sein (welcher mit Doppelpunkt nach dem Namen angegeben wird, e.g. `x: Typ`):
 
@@ -19,46 +19,38 @@ var x: Int = 7
 var x: Double = 3.14
 ```
 
-## Boolean (Wahr/Falsch)
-```kotlin
-var x: Boolean = true // oder false
-```
-
 Kotlin ist sehr intelligent und erkennt den Typ automatisch, 
-wenn du in der Zeile in der du die Variable definierst (dort wo `var` oder `var` steht) ihr einen Wert zuweist.
+wenn du in der Zeile in der du die Variable definierst (dort wo `var` steht) ihr einen Wert mit `=` zuweist.
 Nur wenn der Wert noch nicht bekannt ist, muss man den Typ angeben, z.B.:
 
 ```kotlin
-var x: Int // Wert noch nicht bekannt, deswegen muss der Typ angegeben werden
-println("Bitte eine Zahl eingeben:")
-x = readInt()
+var x = 3
 println(x)
 ```
 
-`readInt()` ist hierbei eine Hilfsfunktion, die dir von deiner Lehrperson bereitgestellt wird,
-um Eingaben zu erleichtern, diese muss aber gegebenenfalls importiert werden
-(Cursor in den roten Text setzen und `Alt+Enter`/`Option+Enter` drücken):
-
-![](../../../../images/ReadIntImport.png)
-
-![](../../../../images/ReadIntImportStep3.png)
-
-Wenn du bei der Ausgabe mehrere Dateitypen kombinieren willst, muss du sie auf einen gemeinsamen Typ konvertieren:
-```kotlin
-var wert: Int = 1
-var einheit: String = "m"
-println("Ergebnis: " + wert.toString() + einheit)
-```
-`"Ergebnis: "` und `einheit` sind hier bereits vom Typ `String`, 
-also muss nur `wert` von `Int` zu `String` mittels `.toString()` umgewandelt werden.
-
-Wenn der gemeinsame Typ `String` ist, kannst du auch Templates verwenden:
+Wenn du Text zusammen mit Variablen verwenden willst, kannst du das so machen:
 ```kotlin
 var wert: Int = 1
 var einheit: String = "m"
 println("Ergebnis: $wert $einheit")
 ```
 
+Mit Variablen kann man genauso wie mit Zahlen rechnen, z.B.:
+
+```kotlin
+var x = readInt("Bitte gib eine Zahl ein:")
+var quadrat = x * x
+println("Das Quadrat von $x ist $quadrat")
+```
+
+`readInt()` ist hierbei eine Hilfsfunktion, die dir von deiner Lehrperson bereitgestellt wird, um Eingaben zu erleichtern.
+Der String `"Bitte gib eine Zahl ein:"` ist hierbei die Eingabe-Aufforderung, die ausgegeben wird:
+
+![](../../../../images/EingabeAufforderung.png)
+
 #Aufgabe
 
 Schreibe ein Programm (`Variablen.kt`) dass zwei Zahlen `a` und `b` zu `ergebnis` addiert und ausgibt `println(ergebnis)`.
+Die Eingabe von `a` und `b` sind bereits vorgegeben.
+
+**Tipp:** So manches kannst du dir vom letzten Beispiel abschauen.

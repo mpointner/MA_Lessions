@@ -31,11 +31,11 @@ while (Batterie_ist_leer == false && Uhr_ist_eingeschalten == true) {
     Warte_1_Sekunde
 }
 ```
-In diesem Beispiel würde der Inhalt (Blinkerlechte_blickt und Blinker_Ton_Tick_Tack) der While-Wiederholung nur dann und 
-solange die Bedingung (solange_Blinker_gesetzt) zutrifft wiederholt ausgeführt werden.
+In diesem Beispiel würde der Inhalt der While-Wiederholung nur dann und 
+solange die Bedingung zutrifft wiederholt ausgeführt werden.
+<!--
 Hierbei muss man aufpassen, dass die Bedingung auch irgendwann mal nicht mehr erfüllt wird, 
 damit auch irgendwann Code nach der While-Schleife ausgeführt werden kann.
-<!--
 In dem vorherigen Beispiel muss die Bedingung erfüllt sein, damit der Inhalt der `while`-Schleife wiederholt ausgeführt wird.
 Es gibt jedoch auch die `do while`-Schleife, wo die Bedingung am Ende ist und damit der Inhalt mindestens einmal ausgeführt wird:
 
@@ -139,7 +139,7 @@ Genau das sollst du jetzt machen: Schreibe ein Programm, dass die 1x1-Matrix aus
 8 16 24 32 40 48 56 64 72 
 9 18 27 36 45 54 63 72 81 
 ```
-Tipp: Verschachtle zwei Schleifen wie eine russische Babuschka und rechne dir die Multiplikation aus beiden Variablen in einer eigenen Variable aus.
-Einen Zeilenumbruch am Ende einer Zeile (nach dem Ende der inneren `for-Schleife`) kannst du mittels `println("")` machen.
+Tipp: Verschachtle zwei Schleifen wie eine russische Babuschka (zweite `for`-Schleife innerhalb der geschwungenen Klammern `{}` der ersten `for`-Schleife) und rechne dir die Multiplikation aus beiden Variablen in einer eigenen Variable aus.
+Einen Zeilenumbruch am Ende einer Zeile (nach dem Ende der inneren `for`-Schleife) kannst du mittels `println("")` machen.
 
 ![](../../../../images/Babuschka.jpg)
