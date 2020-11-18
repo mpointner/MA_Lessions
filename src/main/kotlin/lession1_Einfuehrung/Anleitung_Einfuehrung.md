@@ -16,7 +16,7 @@ fun main() {
 
 `fun` weil Kotlin Spaß macht ;)
 Stimmt nur zum Teil, Kotlin macht natürlich Spaß, `fun` steht in dem Fall aber für Funktion.
-Nach dem Namen `main` folgen dann zwei runde Klammern `()` und geschwungene Klammern `{}` wo uns Programmiercode reinkommt.
+Nach dem Namen `main` folgen dann zwei runde Klammern `()` und geschwungene Klammern `{}` wo unser Programmiercode reinkommt.
 Genug des theoretischen jetzt wollen wir mal etwas ausgeben.
 Die Funktion `print()` schreibt den Inhalt zwischen den runden Klammern auf den Bildschirm, z.B.: `print(1)` gibt die Zahl `1` aus.
 Wenn man Text ausgeben will, muss man den Text unter Anführungszeichen setzen, also `print("Dies ist ein Text")`.

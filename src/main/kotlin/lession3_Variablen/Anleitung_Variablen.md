@@ -19,9 +19,7 @@ var x: Int = 7
 var x: Double = 3.14
 ```
 
-Kotlin ist sehr intelligent und erkennt den Typ automatisch, 
-wenn du in der Zeile in der du die Variable definierst (dort wo `var` steht) ihr einen Wert mit `=` zuweist.
-Nur wenn der Wert noch nicht bekannt ist, muss man den Typ angeben, z.B.:
+Kotlin ist sehr intelligent und erkennt den Typ automatisch, wenn du ihr einen Wert mit `=` zuweist:
 
 ```kotlin
 var x = 3
@@ -30,8 +28,8 @@ println(x)
 
 Wenn du Text zusammen mit Variablen verwenden willst, kannst du das so machen:
 ```kotlin
-var wert: Int = 1
-var einheit: String = "m"
+var wert = 1
+var einheit = "m"
 println("Ergebnis: $wert $einheit")
 ```
 

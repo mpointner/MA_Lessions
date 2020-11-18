@@ -1,5 +1,5 @@
 # Funktionen
-Funktionen sind ein Programm zu strukturieren und Code wiederverwendbar zu machen.
+Funktionen sind gut um ein Programm zu strukturieren und Code an vielen Stellen wiederverwendbar zu machen.
 Du kennst bereits eine Funktion, die `main` Funktion.
 Die `main` Funktion ist eine ganz besondere Art von Funktion, da sie der Einstiegspunkt für die Programmausführung ist.
 Du kannst aber auch selbst Funktionen definierten.
@@ -24,7 +24,7 @@ beim Rückgabetyp nach dem Funktionsname UND den geschwungenen Klammern `(...)`.
 Hier ein Beispiel einer einfachen Funktion ohne Rückgabe samt Aufruf:
 ```kotlin
 fun sayHello(name: String) { // <- Funktionsdefination
-    println("Hello " + name)
+    println("Hello $name")
 }
 
 fun main() {
@@ -43,7 +43,11 @@ Hier ein Beispiel mit zwei Parametern `a` und `b` vom Typ `String` und einem Rü
 
 ```kotlin
 fun max(a: Int, b: Int): Int { // <- Funktionsdefinition
-    return if (a > b) a else b
+    if (a > b) {
+        return a
+    } else {
+        return b
+    }
 }
 
 fun main() {
@@ -72,13 +76,7 @@ fun main() {
 }
 ```
 
-Bis jetzt waren das immer nur ganz kurze Funktionen, wo sich das Auslagern des Codes eigentlich nicht auszahlen würde.
-Funktionen sind aber nicht auf eine Zeile beschränkt, sondern können auch größer werden.
-Zum Beispiel kennst du vielleicht die Fakultät oder die Fibonacci-Folge.
-Keine Sorge, du musst die folgende zwei Funktionen nicht verstehen, 
-sie sind nur dazu da, dir zu zeigen, dass Funktionen auch größer verwenden können.
-
-## Fakultät (zur Anschauung)
+## Fakultät
 
 Die [Fakultät](https://de.wikipedia.org/wiki/Fakult%C3%A4t_(Mathematik)) berechnet das Produkt von `x * (x-1) * ... * 1`, z.B.: `5! = 5 * 4 * 3 * 2 * 1 = 120`.
 ```kotlin
@@ -154,9 +152,9 @@ f_10: 89
 
 ![](../../../../images/Kleidung.jpg)
 
-Hier ein Beispiel wo eine Funktion sinnvoll ist. Bei dem Kleidungsgeschäft deiner Wahl ist ein tolles Kleidungsstück um `x` Prozent vom angegebenen Preis verbilligt.
+Bei dem Kleidungsgeschäft deiner Wahl ist ein tolles Kleidungsstück um `x` Prozent vom angegebenen Preis verbilligt.
 Der Rabatt wird aber erst an der Kassa abgezogen, du möchtest aber wissen, ob du genug Bargeld dabei hast, um das Kleidungsstück nach Rabatt zu kaufen.
-Diese Berechnung kann als Funktion geschrieben werden und somit an mehreren Stellen aufgerufen werden.
+Diese Berechnung kann als Funktion geschrieben werden und somit an mehreren Stellen aufgerufen werden:
 
 ```kotlin
 fun aktionsPreis(preis: Double, rabatt: Double): Double { // <- Funktionsdefinition
@@ -184,7 +182,7 @@ Die Bar verlangt 8 € Eintritt und dein Lieblingsgetränk kostet 3.50 €.
 Wie viele Gläser/Flaschen von deinem Lieblingsgetränk kannst du dir kaufen?
 
 Schreib eine allgemeine Funktion `berechneAnzahlLieblingsgetraenk`, die dir abhängig vom `budget`, `eintritt` und `getraenkPreis` die `getraenkAnzahl` ausrechnet.
-Rechne wieder in `Double`.
+Rechne wie im vorherigen Beispiel in `Double`.
 **Tipps:** Manches kannst du dir beim vorherigen Beispiel "Shoppen" abschauen.
 
 

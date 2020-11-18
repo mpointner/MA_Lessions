@@ -48,14 +48,14 @@ do { // Zumindest ein Durchlauf
 ## For: Für Abfolgen und Listen
 
 Zurückkommend auf das Beispiel zu Beginn der Seite ... 
-Für Abfolgen, wo man einen Zähler braucht, eignet sich noch besser als die `while`-Schleife die `for` Schleife.
+Für Abfolgen, wo man einen Zähler braucht, eignet sich noch besser als die `while`-Schleife die `for`-Schleife.
 Die Syntax der Bedingung der `for`-Schleife besteht aus zwei Teilen getrennt durch ein `in`: 
 * Variablenname (erhält immer den aktuellen Wert des Schleifendurchlaufes)
 * Abfolge/Liste mit den durchlaufenen Werten, z.B. 1 bis 9 (geschrieben als `1..9`)
 
 ### ..-Abfolge
 
-Für aufsteigende Aufzählungen eignet sich die `..`-Abfolge mit folgender Syntax: `start..ende` (start und ende inklusive):
+Für aufsteigende Abfolgen eignet sich die `..`-Abfolge mit folgender Syntax: `start..ende` (start und ende inklusive):
 ```kotlin
 for (i in 1..9) { // inklusive 9
     print("$i ")
@@ -67,7 +67,7 @@ for (i in 1..9) { // inklusive 9
 
 ### until-Abfolge
 
-Wenn das Ende exkludiert werden soll, kann man entweder `start..(ende-1)` oder `start until ende` (ende exklusive) verwenden:
+Wenn das Ende exkludiert werden soll, kann man entweder `start..(ende-1)` oder `start until ende` verwenden:
 ```kotlin
 for (i in 1 until 10) { // ohne 10 (gleich wie 1..9)
     print("$i ")
@@ -80,7 +80,7 @@ for (i in 1 until 10) { // ohne 10 (gleich wie 1..9)
 ### downTo-Abfolge
 
 Absteigende Folgen kann man mit `downTo` realisieren.
-Mit `step` kann man die Schrittweite verändern (kann auch mit `..` oder `until` kombiniert werden).
+Mit `step` kann man die Schrittweite verändern (kann auch mit `..` oder `until` kombiniert werden), ohne ist sie standardmäßig `1`.
 ```kotlin
 for (i in 9 downTo 1 step 2) { // von 9 nach 1 runter mit 2-Schrittweit: 
     print("$i ")
@@ -89,6 +89,13 @@ for (i in 9 downTo 1 step 2) { // von 9 nach 1 runter mit 2-Schrittweit:
 ```
 9 7 5 3 1 
 ```
+
+# Aufgabe: Happy New Year Countdown
+Schreibe einen Countdown für nächstes Silvester.
+Der Countdown soll von `10` nach `1` runderzählen und nach jeder Zahl 1 Sekunde (=1000ms) warten.
+Verwendet dazu die `downTo-Abfolge` und den Befehl `Thread.sleep(1000)` um eine Sekunde zu warten.
+Gib am Ende einen Neu-Jahrs-Spruch aus und schieß ein Feuerwerk in den Himmel über Wien.
+Du kannst das machen, indem du den Befehl `feuerwerk()` verwendest.
 
 ### Listen
 
@@ -105,7 +112,7 @@ for (element in list) {
 
 oder mit den Werten rechnen:
 ```kotlin
-for (i in 1 until 5) { // ohne 10 (gleich wie 1..9)
+for (i in 1..5) {
     var i_squared = i * i
     print("$i_squared ")
 }
@@ -114,17 +121,8 @@ for (i in 1 until 5) { // ohne 10 (gleich wie 1..9)
 1 4 9 16 25
 ```
 
-# Aufgaben
 
-## Happy New Year Countdown
-Schreibe einen Countdown für nächstes Silvester.
-Der Countdown soll von `10` nach `1` runderzählen und nach jeder Zahl 1 Sekunde (=1000ms) warten.
-Verwendet dazu die `downTo-Abfolge` und den Befehl `Thread.sleep(1000)` um eine Sekunde zu warten.
-Gib am Ende einen Neu-Jahrs-Spruch aus und schieß ein Feuerwerk in den Himmel über Wien.
-Du kannst das machen, indem du den Befehl `feuerwerk()` verwendest.
-
-
-## 1x1
+# Aufgabe: 1x1
 Stelle dir vor du hättest in der Volksschule schon programmieren können, 
 wie leicht wäre dann das Aufschreiben der 1x1 Tabelle gewesen.
 Genau das sollst du jetzt machen: Schreibe ein Programm, dass die 1x1-Matrix ausgibt:
@@ -139,7 +137,8 @@ Genau das sollst du jetzt machen: Schreibe ein Programm, dass die 1x1-Matrix aus
 8 16 24 32 40 48 56 64 72 
 9 18 27 36 45 54 63 72 81 
 ```
-Tipp: Verschachtle zwei Schleifen wie eine russische Babuschka (zweite `for`-Schleife innerhalb der geschwungenen Klammern `{}` der ersten `for`-Schleife) und rechne dir die Multiplikation aus beiden Variablen in einer eigenen Variable aus.
+Tipp: Verschachtle zwei Schleifen wie eine russische Babuschka (zweite `for`-Schleife innerhalb der geschwungenen Klammern `{}` der ersten `for`-Schleife) und 
+rechne dir die Multiplikation aus beiden Variablen (Variablen unterschiedlich benennen, z.B.: `i`, `j`) in einer eigenen Variable `multiplikation` aus.
 Einen Zeilenumbruch am Ende einer Zeile (nach dem Ende der inneren `for`-Schleife) kannst du mittels `println("")` machen.
 
 ![](../../../../images/Babuschka.jpg)

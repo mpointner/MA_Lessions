@@ -17,11 +17,10 @@ ob Kotlin für Schüler*innen leichter zu lernen ist als ältere Programmierspra
 ob die Fehlermeldungen von Kotlin verständlicher sind.
 Dein Feedback kann beeinflussen, welche Programmiersprache zukünftig unterrichtet wird.
 
-Wechsle im Projekt Reiter (link oben, `Alt+1`/`Cmd+1`) auf `Packages`:\
+Wechsle im Projekt Reiter (links oben, `Alt+1`/`Cmd+1`) auf `Packages`:\
 ![](images/ChangeToPackeges.jpg)
 
 Jede Lektion besteht aus einer Anleitung und einer oder mehreren Aufgaben.
-
 In der Anleitung wird dir jeweils erklärt, was du zur Lösung der Aufgaben brauchst.
 
-Öffne `lession1_Einfuehrung/Anleitung_Einfuehrung.md` um zu der ersten Aufgabe zu kommen.
+Öffne `Lessions/lession1_Einfuehrung/Anleitung_Einfuehrung.md` um zu der ersten Aufgabe zu kommen.

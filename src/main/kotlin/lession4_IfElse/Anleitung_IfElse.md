@@ -44,7 +44,7 @@ Wie du hier siehst, hat nur der `if`-Pfad eine Bedingung und der `else`-Pfad wir
 ![](../../../../images/Passwort.jpg)
 
 Schreibe ein Programm, dass eine Passworteingabe überprüft. Als Hilfestellung ist `var passwort: String = readString("Passwort eingeben:")` bereits vorgegeben.
-Überprüfe, ob das Passwort mit `"geheim"` übereinstimmt. Wenn ja, soll "Eingeloggt" ausgegeben werden, sonst "Falsches Passwort".
+Überprüfe, ob das Passwort mit `"geheim"` übereinstimmt. Wenn ja, soll `"Eingeloggt"` ausgegeben werden, sonst `"Falsches Passwort"`.
 Die geschwungenen Klammern `{}` kannst du mit `alt gr + 7` bzw. `alt gr + 0` machen.
 
 ## Logische Operatoren
@@ -61,8 +61,9 @@ if (temperatur >= 25 && temperatur <= 35) {
 
 Hier wurde der UND-Operator `&&` (doppeltes Kaufmanns-Und) verwendet.
 Es gibt auch den ODER-Operation `||` (doppelter Strich `alt gr+<` / `Option+7`).
-Bei einer Mischung von UND- und ODER-Operatoren ist die höhere Priorität von UND zu beachten (ähnlich Punkt-vor-Strich-Regel in Mathematik).
+Bei einer Mischung von UND- und ODER-Operatoren ist die höhere Bindefähigkeit von UND zu beachten (ähnlich Punkt-vor-Strich-Regel in Mathematik).
 
+<!--
 ## Tipps und Tricks
 
 ```kotlin
@@ -100,6 +101,7 @@ var b: Int = 2
 var max = if (a > b) a else b
 println(max)
 ```
+-->
 
 # Aufgabe: Schere-Stein-Papier
 
@@ -110,7 +112,7 @@ Zur Erleichterung sind die Werte `Schere`,`Stein`,`Papier` bereits in Variablen 
 Beachte bei der Eingabe die Großschreibung der ersten Buchstabens.
 Die Variablen selbst sind aber aus Konvention kleingeschrieben.
 
-### Beachte folgende Fälle:
+**Beachte folgende Fälle:**
 
 <!--
 |*Ich* (Zeile), *Computer* (Spalte)|    *Schere*   |    *Stein*    |    *Papier*   |
